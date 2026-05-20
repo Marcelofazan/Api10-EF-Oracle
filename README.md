@@ -26,29 +26,24 @@ Install-Package Microsoft.EntityFrameworkCore.Design
 ```bash
 Add-Migration InitialCreate -StartupProject "SimplesOracleEF"
 ```
-* Como aplicar as mudanças no banco
+* Aplicar criação das tabelas no Oracle
 
 ```bash
 Update-Database -StartupProject "SimplesOracleEF"
 ```
-
+As tabelas **Vendedores e Produtos ** são criada antes da execução.
+  
 #### Execução da Aplicação
 
-- Após o Migrations, executa a aplicação **https://localhost:7092/Swagger/index.html** (ou na porta exibida no terminal). 
+- Após o Migrations, executa a aplicação **https://localhost:7232/Swagger/index.html** (ou na porta exibida no terminal). 
 
-- As tabelas Oracle é criada **Vendedores e Produtos ** é criada no Update-Database.
-
-#### 🧪 Execução Inicial de Endpoints
-
-
-#### Rotas dos métodos e funções
-```bash
-
-Metodo: GET/POST /api/Vendedores             Função: Listar / Criar produtos
-Metodo: GET/PUT/DELETE /api/Vendedores/{id}  Função: Obter / Atualizar / Excluir produto
-Metodo: GET/POST /api/Produtos               Função: Listar / Criar produtos
-Metodo: GET/PUT/DELETE /api/Produtos/{id}    Função: Obter / Atualizar / Excluir produto
-```
+#### 🧪 Execução de Endpoints
+| Metodo | Descrição |
+|-----------|-----------|
+| Metodo: GET/POST /api/Vendedores | Função: Listar / Criar produtos |
+| Metodo: GET/PUT/DELETE /api/Vendedores/{id} | Função: Obter / Atualizar / Excluir produto |
+| Metodo: GET/POST /api/Produtos | Função: Listar / Criar produtos |
+| Metodo: GET/PUT/DELETE /api/Produtos/{id}  | Função: Obter / Atualizar / Excluir produto |
 
 ⚠️ String de conexão do banco
 Modifique a string de conexão no arquivo **appsettings.json**, no trecho indicado:
