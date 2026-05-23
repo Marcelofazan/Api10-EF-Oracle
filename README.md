@@ -1,16 +1,13 @@
-## 🚀 WebApi-Simples-Oracle-EF10
-
+## 🚀 Api-Simples-Oracle-EF10
 Exemplo de criação de WebAPI relação 1-N com banco de dados Oracle.
 
 #### O que você vai encontrar neste projeto
-
 | Tecnologia | Descrição |
 |-----------|-----------|
 | **Eager Loading** | Carregar entidades relacionadas na mesma consulta inicial |
 | **DTO** | Separação de responsabilidades, desacoplamento de modelos de entrada (Request) e saída (Response) |
 
-#### Requisitos e Detalhe do uso de EntityFrameworkCore 10
-
+#### Requisitos do Projeto
 No Visual Studio Abra (Ferramentas) > (Gerenciador de Pacotes NuGet) > (Console do Gerenciador de Pacotes Nuget)  
 Necessário para Atualizar o Depurador com a Solução. 
 
@@ -33,11 +30,11 @@ Update-Database -StartupProject "SimplesOracleEF"
 ```
 As tabelas **Vendedores e Produtos ** são criada antes da execução.
   
-#### Execução da Aplicação
+#### Executar a Aplicação
 
 - Após o Migrations, executa a aplicação **https://localhost:7232/Swagger/index.html** (ou na porta exibida no terminal). 
 
-#### 🧪 Execução de Endpoints
+#### 🧪 Executar Endpoints
 | Metodo | Descrição |
 |-----------|-----------|
 | Metodo: GET/POST /api/Vendedor | Função: Listar / Criar vendedores |
@@ -45,9 +42,8 @@ As tabelas **Vendedores e Produtos ** são criada antes da execução.
 | Metodo: GET/POST /api/Produtos | Função: Listar / Criar produtos |
 | Metodo: GET/PUT/DELETE /api/Produtos/{id}  | Função: Obter / Atualizar / Excluir produto |
 
-⚠️ String de conexão do banco
-Modifique a string de conexão no arquivo **appsettings.json**, no trecho indicado:
-
+#### ⚠️ String de conexão do banco
+- Modifique a string de conexão no arquivo **appsettings.json**, no trecho indicado:
 ```bash
 "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=[SEU_NOMECOMPUTADOR].mshome.net)(PORT=1521))(CONNECT_DATA=[SEU_NOMECOMPUTADOR].mshome.net));User Id=[SEU_USUARIO];Password=[SUASENHA];"
 ```
