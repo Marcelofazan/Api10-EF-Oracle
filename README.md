@@ -1,4 +1,4 @@
-## 🚀 Api-Simples-Oracle-EF10
+## 🚀 Api10-EF-Simples-Oracle
 Exemplo de criação de WebAPI relação 1-N com banco de dados Oracle.
 
 #### O que você vai encontrar neste projeto
