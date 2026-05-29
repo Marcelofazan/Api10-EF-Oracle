@@ -30,7 +30,7 @@ Update-Database -StartupProject "SimplesOracleEF"
 ```
 As tabelas **Vendedores e Produtos ** são criada antes da execução.
   
-#### Executar a Aplicação
+#### 🔄 Executar a Aplicação
 
 - Após o Migrations, executa a aplicação **https://localhost:7232/Swagger/index.html** (ou na porta exibida no terminal). 
 
