@@ -4,8 +4,8 @@ Exemplo de criação de API relação 1-N com banco de dados Oracle.
 #### O que você vai encontrar neste projeto
 | Tecnologia | Descrição |
 |-----------|-----------|
-| **Eager Loading** | Carregar entidades relacionadas na mesma consulta inicial |
 | **DTO** | Separação de responsabilidades, desacoplamento de modelos de entrada (Request) e saída (Response) |
+| **Eager Loading** | Carregar entidades relacionadas na mesma consulta inicial |
 
 #### Requisitos do Projeto
 No Visual Studio Abra (Ferramentas) > (Gerenciador de Pacotes NuGet) > (Console do Gerenciador de Pacotes Nuget)  
