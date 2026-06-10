@@ -29,7 +29,13 @@ Add-Migration InitialCreate -StartupProject "SimplesOracleEF"
 Update-Database -StartupProject "SimplesOracleEF"
 ```
 As tabelas **Vendedores e Produtos ** são criada antes da execução.
-  
+
+ #### ⚠️ String de conexão do banco
+- Modifique a string de conexão no arquivo **appsettings.json**, no trecho indicado:
+```bash
+"Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=[SEU_NOMECOMPUTADOR].mshome.net)(PORT=1521))(CONNECT_DATA=[SEU_NOMECOMPUTADOR].mshome.net));User Id=[SEU_USUARIO];Password=[SUASENHA];"
+```
+
 #### 🔄 Executar a Aplicação
 
 - Após o Migrations, executa a aplicação **https://localhost:7232/Swagger/index.html** (ou na porta exibida no terminal). 
@@ -41,11 +47,5 @@ As tabelas **Vendedores e Produtos ** são criada antes da execução.
 | Metodo: GET/PUT/DELETE /api/Vendedor/{id} | Função: Obter / Atualizar / Excluir vendedor |
 | Metodo: GET/POST /api/Produtos | Função: Listar / Criar produtos |
 | Metodo: GET/PUT/DELETE /api/Produtos/{id}  | Função: Obter / Atualizar / Excluir produto |
-
-#### ⚠️ String de conexão do banco
-- Modifique a string de conexão no arquivo **appsettings.json**, no trecho indicado:
-```bash
-"Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=[SEU_NOMECOMPUTADOR].mshome.net)(PORT=1521))(CONNECT_DATA=[SEU_NOMECOMPUTADOR].mshome.net));User Id=[SEU_USUARIO];Password=[SUASENHA];"
-```
 
 
