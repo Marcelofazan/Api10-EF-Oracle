@@ -1,7 +1,7 @@
 ## 🚀 Api10-EF-Simples-Oracle
 Exemplo de criação de API relação 1-N com banco de dados Oracle.
 
-#### O que você vai encontrar neste projeto
+#### 📋 O que você vai encontrar neste projeto
 | Tecnologia | Descrição |
 |-----------|-----------|
 | **DTO** | Separação de responsabilidades, desacoplamento de modelos de entrada (Request) e saída (Response) |
