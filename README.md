@@ -1,4 +1,4 @@
-## 🚀 Api10-EF-Simples-Oracle
+## 🚀 Api-Net10-EF-Oracle
 Exemplo de criação de API relação 1-N com banco de dados Oracle.
 
 #### 📋 O que você vai encontrar neste projeto
