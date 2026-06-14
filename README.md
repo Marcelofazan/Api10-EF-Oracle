@@ -1,5 +1,5 @@
 ## 🚀 Api10-EF-Oracle
-Exemplo de criação de API relação 1-N com banco de dados Oracle.
+Exemplo de API relação 1-N com banco de dados Oracle.
 
 #### 📋 O que você vai encontrar neste projeto
 | Tecnologia | Descrição |
