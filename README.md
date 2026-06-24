@@ -13,7 +13,7 @@ Exemplo de API relação 1-N em C# ASP.NET Core 10 com banco de dados Oracle.
 "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=[SEU_NOMECOMPUTADOR].mshome.net)(PORT=1521))(CONNECT_DATA=[SEU_NOMECOMPUTADOR].mshome.net));User Id=[SEU_USUARIO];Password=[SUASENHA];"
 ```
 
-#### 🔄 Executar a Aplicação
+#### 🔄 Executar a aplicação
 No Visual Studio Abra Ferramentas -> Gerenciador de Pacotes NuGet -> Console do Gerenciador de Pacotes Nuget  
 Necessário para Atualizar o Depurador com a Solução. 
 
