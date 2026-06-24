@@ -38,9 +38,9 @@ As tabelas **Vendedores e Produtos ** são criada antes da execução.
 #### 🧪 Executar Endpoints
 | Metodo | Descrição |
 |-----------|-----------|
-| Metodo: GET/POST /api/Vendedor | Função: Listar / Criar vendedores |
-| Metodo: GET/PUT/DELETE /api/Vendedor/{id} | Função: Obter / Atualizar / Excluir vendedor |
-| Metodo: GET/POST /api/Produtos | Função: Listar / Criar produtos |
-| Metodo: GET/PUT/DELETE /api/Produtos/{id}  | Função: Obter / Atualizar / Excluir produto |
+| GET/POST /api/Vendedor | Listar / Criar vendedores |
+| GET/PUT/DELETE /api/Vendedor/{id} |  Obter / Atualizar / Excluir vendedor |
+| GET/POST /api/Produtos | Listar / Criar produtos |
+| GET/PUT/DELETE /api/Produtos/{id}  | Obter / Atualizar / Excluir produto |
 
 
