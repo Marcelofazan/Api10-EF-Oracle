@@ -7,27 +7,6 @@ Exemplo de API relação 1-N em C# ASP.NET Core 10 com banco de dados Oracle.
 | **DTO** | Separação de responsabilidades, desacoplamento de modelos de entrada (Request) e saída (Response) |
 | **Eager Loading** | Carregar entidades relacionadas na mesma consulta inicial |
 
-#### 💬 Requisitos do Projeto
-No Visual Studio Abra (Ferramentas) > (Gerenciador de Pacotes NuGet) > (Console do Gerenciador de Pacotes Nuget)  
-Necessário para Atualizar o Depurador com a Solução. 
-
-* Instalar pacotes necessários (Obrigatório)
-```bash
-Install-Package Microsoft.EntityFrameworkCore.Tools
-Install-Package Microsoft.EntityFrameworkCore.Design
-```
-* Usar o comando Add-Migration para Code First
-
-```bash
-Add-Migration InitialCreate -StartupProject "SimplesOracleEF"
-```
-* Aplicar criação das tabelas no Oracle
-
-```bash
-Update-Database -StartupProject "SimplesOracleEF"
-```
-As tabelas **Vendedores e Produtos ** são criada antes da execução.
-
  #### ⚠️ String de conexão do banco
 - Modifique a string de conexão no arquivo **appsettings.json**, no trecho indicado:
 ```bash
@@ -35,6 +14,25 @@ As tabelas **Vendedores e Produtos ** são criada antes da execução.
 ```
 
 #### 🔄 Executar a Aplicação
+No Visual Studio Abra Ferramentas -> Gerenciador de Pacotes NuGet -> Console do Gerenciador de Pacotes Nuget  
+Necessário para Atualizar o Depurador com a Solução. 
+
+- Instalar pacotes necessários (Obrigatório)
+```bash
+Install-Package Microsoft.EntityFrameworkCore.Tools
+Install-Package Microsoft.EntityFrameworkCore.Design
+```
+* Usar o comando Add-Migration para Code First
+```bash
+Add-Migration InitialCreate -StartupProject "SimplesOracleEF"
+```
+- Aplicar criação das tabelas no Oracle
+
+```bash
+Update-Database -StartupProject "SimplesOracleEF"
+```
+As tabelas **Vendedores e Produtos ** são criada antes da execução.
+
 - Após o Migrations, executa a aplicação **https://localhost:7232/Swagger/index.html** (ou na porta exibida no terminal). 
 
 #### 🧪 Executar Endpoints
