@@ -7,6 +7,9 @@ Exemplo de API relação 1-N em C# ASP.NET Core 10 com banco de dados Oracle.
 | **DTO** | Separação de responsabilidades, desacoplamento de modelos de entrada (Request) e saída (Response) |
 | **Eager Loading** | Carregar entidades relacionadas na mesma consulta inicial |
 
+#### 💬 Requisitos do Projeto
+- Realizar Migrations EntityFramework .NET
+  
  #### ⚠️ String de conexão do banco
 - Modifique a string de conexão no arquivo **appsettings.json**, no trecho indicado:
 ```bash
